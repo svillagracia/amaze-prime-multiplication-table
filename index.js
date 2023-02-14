@@ -34,7 +34,19 @@ const generatePrimes = (n) => {
 };
 
 // Generate the multiplication table
-const generateTable = (N) => {};
+const generateTable = (N) => {
+  const primes = generatePrimes(N);
+  const table = [];
+  table.push([' '].concat(primes));
+  primes.forEach((prime) => {
+    const row = [prime];
+    primes.forEach((p) => {
+      row.push(prime * p);
+    });
+    table.push(row);
+  });
+  return table;
+};
 
 // Tests
 
