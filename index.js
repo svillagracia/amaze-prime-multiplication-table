@@ -48,6 +48,18 @@ const generateTable = (N) => {
   return table;
 };
 
+// Print the multiplication table
+const printTable = (table) => {
+  let output = '';
+  table.forEach((row) => {
+    row.forEach((cell) => {
+      output += cell + '\t';
+    });
+    output += '\n';
+  });
+  console.log(output);
+};
+
 // Tests
 
 /**
@@ -110,7 +122,7 @@ assert.deepStrictEqual(
 );
 
 /**
- * Tests for generating the table.
+ * Test for generating the table.
  */
 assert.deepStrictEqual(generateTable(3), [
   [' ', 2, 3, 5],
@@ -118,3 +130,20 @@ assert.deepStrictEqual(generateTable(3), [
   [3, 6, 9, 15],
   [5, 10, 15, 25],
 ]);
+
+/**
+ * Test of printing the table
+ */
+const capturedLog = [];
+const consoleLog = console.log;
+console.log = (...args) => {
+  capturedLog.push(...args);
+};
+
+printTable(generateTable(3));
+assert.strictEqual(
+  capturedLog.join('\n'),
+  ' \t2\t3\t5\t\n2\t4\t6\t10\t\n3\t6\t9\t15\t\n5\t10\t15\t25\t\n'
+);
+
+console.log = consoleLog;
