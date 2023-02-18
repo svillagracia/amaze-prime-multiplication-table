@@ -1,0 +1,23 @@
+{
+  "name": "amaze-prime-multiplication-table",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "node test.spec.js"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svillagracia/amaze-prime-multiplication-table.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "ptable": "node bin/index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/svillagracia/amaze-prime-multiplication-table/issues"
+  },
+  "homepage": "https://github.com/svillagracia/amaze-prime-multiplication-table#readme"
+}
