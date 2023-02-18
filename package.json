@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js make-table",
     "test": "node prime-table.spec.js"
   },
   "type": "module",
