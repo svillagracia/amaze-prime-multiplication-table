@@ -2,9 +2,9 @@
   "name": "amaze-prime-multiplication-table",
   "version": "1.0.0",
   "description": "",
-  "main": "bin/index.js",
+  "main": "index.js",
   "scripts": {
-    "test": "node test.spec.js"
+    "test": "node prime-table.spec.js"
   },
   "type": "module",
   "repository": {
@@ -13,11 +13,11 @@
   },
   "author": "",
   "license": "ISC",
-  "bin": {
-    "ptable": "node bin/index.js"
-  },
   "bugs": {
     "url": "https://github.com/svillagracia/amaze-prime-multiplication-table/issues"
   },
-  "homepage": "https://github.com/svillagracia/amaze-prime-multiplication-table#readme"
+  "homepage": "https://github.com/svillagracia/amaze-prime-multiplication-table#readme",
+  "dependencies": {
+    "yargs": "^17.7.0"
+  }
 }

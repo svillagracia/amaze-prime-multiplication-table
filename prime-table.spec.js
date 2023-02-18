@@ -5,7 +5,7 @@ import {
   generatePrimes,
   generateTable,
   printTable,
-} from './index.js';
+} from './prime-table.js';
 
 /**
  *
